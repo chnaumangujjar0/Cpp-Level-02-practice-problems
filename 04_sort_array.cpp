@@ -9,7 +9,7 @@ int main(){
     int n=7,n2=7;
     int largest=arr[0];
     int newarr[7];
-
+    int smallest=0;
     while(n2!=0){
     // find largest===========
     for(int i=0;i<n;i++){
@@ -34,4 +34,5 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<"Value at index "<<i<<" is "<<newarr[i]<<endl;
     }
+
 }
