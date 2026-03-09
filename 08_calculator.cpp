@@ -24,7 +24,7 @@ using namespace std;
     {
     if(n2 == 0){
         cout<<"invalid dividend"<<endl;
-       return -1;
+       return n1;
     }
         return n1 / n2;
      }else{
@@ -34,7 +34,7 @@ using namespace std;
     }
 int main(){
     int n1;
-    double result;
+    int result;
    
     cout<<"\n ==============CALCULATOR============="<<endl;
      cout<<"\n Enter Number 01 : ";
