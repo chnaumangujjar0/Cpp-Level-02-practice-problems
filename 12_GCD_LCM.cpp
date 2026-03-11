@@ -17,7 +17,7 @@ int GCD(int num1,int num2){
    cout<<arr1[i]<<" ";
  }
  cout<<endl;
-//====check factore for num2
+//====check factor for num2
  for(int i=1;i<=num2;i++){
    if(num2 % i == 0){
       arr2[n2] = i;
@@ -29,7 +29,7 @@ cout<<"Array 02 : ";
    cout<<arr2[i]<<" ";
   }
 cout<<endl;
-
+// Finf GCD 
 for(int i=0;i<n1;i++){
 
      for(int j=0;j<n2;j++){
@@ -41,6 +41,13 @@ for(int i=0;i<n1;i++){
   
   return gcd;
  }
+
+int LCM(int num1,int num2,int gcd){
+   int lcm=(num1 * num2)/gcd;
+
+   return lcm;
+}
+
 int main(){
     int num1,num2;
     cout<<"Enter Number 1: ";
@@ -49,7 +56,10 @@ int main(){
     cin>>num2;
     
   int gcd = GCD(num1,num2);
-  cout<<"Greatest Common Diviser = "<<gcd;
+  cout<<"Greatest Common Diviser = "<<gcd<<endl;
+
+  int lcm=LCM(num1,num2,gcd);
+  cout<<"LCM = "<<lcm;
 }
 
 
