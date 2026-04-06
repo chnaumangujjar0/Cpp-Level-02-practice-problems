@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int arr[] = {5, 3, 4, 7, 8, 2, 1, 9, 6};
+    int arr[] = {5, -3, 4, -7, 8, -2, -1, 9, 6};
     int size = sizeof(arr) / sizeof(arr[0]);
 
     int k = 3;   // Window size
@@ -31,6 +31,5 @@ int main() {
     }
 
     cout << "\nLargest Sum = " << largest << endl;
-
     return 0;
 }
